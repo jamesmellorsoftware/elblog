@@ -10,14 +10,6 @@ $showHeader = true;
 
 // Adjust header text and size based on page name
 switch ($pageName) {
-    case "about.php":
-        $pageTitle = "About Me";
-        $pageSubhead = "This is what I do.";
-        break;
-    case "contact.php":
-        $pageTitle = "Contact Me";
-        $pageSubhead = "Have questions? I have answers.";
-        break;
     case "index.php?post_author":
     case "login.php":
     case "post.php":
@@ -28,7 +20,7 @@ switch ($pageName) {
     case "index.php":
     default:
         $pageTitle = "El Blog";
-        $pageSubhead = "A blog by James Mellor.";
+        $pageSubhead = "A custom blog system.";
         break;
 }
 
