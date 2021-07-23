@@ -1,0 +1,51 @@
+.is-invalid {
+    border-color: red;
+}
+
+.admin_table_row,
+.table__headers,
+.comment_post_id {
+    cursor: pointer;
+}
+
+.clickable_th,
+.clickable_td {
+    cursor: default;
+}
+
+.comment_post_id:hover {
+    background-color: #f5f5f5;
+}
+
+.checkboxTableRow {
+    width: 20px;
+}
+
+.table__headers--selected {
+    background-color: #00AAFF;
+}
+
+.table__headers th:hover {
+    background-color: #f5f5f5;
+    color: #000 !important;
+}
+
+.DESC,
+.ASC {
+    background-color: #00AAFF;
+    color: #fff;
+}
+
+.buttons__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-header-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-search {
+    cursor: pointer;
+}

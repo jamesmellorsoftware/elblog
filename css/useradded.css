@@ -1,0 +1,27 @@
+.likeThumb,
+.commentLikeThumb {
+    cursor: pointer;
+}
+
+.likeThumb:hover,
+.commentLikeThumb:hover {
+    color: #2EBDD1;
+}
+
+.liked { color: #2EBDD1; }
+
+.post-heading {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.buttons__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-search {
+    cursor: pointer;
+}
