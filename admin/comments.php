@@ -90,15 +90,17 @@ $select_all_comments = mysqli_query($connection, $query);
 // Catch comments in array
 $i = 0;
 $comments = [];
-while ($row = mysqli_fetch_assoc($select_all_comments)) {
-    $comments[$i]['comment_id']      = $row['comment_id'];
-    $comments[$i]['comment_author']  = $row['user_username'];
-    $comments[$i]['comment_content'] = $row['comment_content'];
-    $comments[$i]['comment_post_id'] = $row['comment_post_id'];
-    $comments[$i]['comment_likes']   = $row['comment_likes'];
-    $comments[$i]['comment_status']  = $row['comment_status'];
-    $comments[$i]['comment_date']    = $row['comment_date'];
-    $i++;
+if ($select_all_comments) {
+    while ($row = mysqli_fetch_assoc($select_all_comments)) {
+        $comments[$i]['comment_id']      = $row['comment_id'];
+        $comments[$i]['comment_author']  = $row['user_username'];
+        $comments[$i]['comment_content'] = $row['comment_content'];
+        $comments[$i]['comment_post_id'] = $row['comment_post_id'];
+        $comments[$i]['comment_likes']   = $row['comment_likes'];
+        $comments[$i]['comment_status']  = $row['comment_status'];
+        $comments[$i]['comment_date']    = $row['comment_date'];
+        $i++;
+    }
 }
 
 include "includes/modal_search_comments.php";

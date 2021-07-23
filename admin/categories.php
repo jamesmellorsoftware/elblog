@@ -58,7 +58,7 @@ if (isset($_POST['add_category'])) {
         $category_error = "Field cannot be empty.";
     } else {
         // Insert category
-        $stmt = mysqli_prepare($connection, "INSERT INTO categories(cat_name) VALUES(?) ");
+        $stmt = mysqli_prepare($connection, "INSERT INTO categories(cat_name) VALUES (?) ");
         mysqli_stmt_bind_param($stmt, "s", $new_cat_name);
         mysqli_stmt_execute($stmt);
 

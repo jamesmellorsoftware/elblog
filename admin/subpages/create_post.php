@@ -73,7 +73,7 @@ while ($row = mysqli_fetch_assoc($categories_query)) {
         echo generateDismissableAlert($create_post_errors);
 
         if ($post_created_successfully) {
-            echo generateDismissableAlert($edit_post_success_msgs, "success");
+            echo generateDismissableAlert($create_post_success_msgs, "success");
             $create_post_errors = [];
             $post_title       = "";
             $post_author_id   = "";
