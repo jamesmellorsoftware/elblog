@@ -25,20 +25,14 @@ None yet.
 
 ## Setup
 Download code, import portfolioblog.sql database to your MySQL installation.
-To access admin functions, you will need to create an admin user first - do this via SQL.
-INSERT INTO users (user_username, user_password, user_firstname, user_lastname, user_role, user_email) VALUES ("USERNAME", "PASSWORD", "FNAME", "LNAME", "admin", "EMAIL")
-From the admin section, you will have to edit your own user to hash the password so you can log in properly.
-Until then, you will have to comment out the password encryption in login.php so you can log in with your unhashed password to access the admin section.
-Make sure to restore the encrypt function after doing this!
+To access admin functions, you can log in using the admin account which comes with the database install portfolioblog.sql :
+Username: admin
+Password: 123
 
 ## Features
 List of features ready and TODOs for future development
 * Ability to post, like posts, comment on posts, like comments
 * 3 user types: admin (all access), writer (only allowed to write posts), subscriber (only allowed to like and comment, cannot access admin)
-
-To-do list:
-* Introduce WYSIWYG editor and allow DB to accept HTML
-* Post categories should be displayed or actually do something
 
 ## Status
 Project is: _in progress_ focusing on other projects at the moment.
